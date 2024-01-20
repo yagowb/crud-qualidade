@@ -1,1 +1,15 @@
-Hoje eu tô praticando na aula 2.1
+{
+  "todos": [
+    {
+      "date": "2024-01-20T23:04:37.126Z",
+      "content": "Primeira TODO",
+      "done": false
+    },
+    {
+      "date": "2024-01-20T23:04:37.127Z",
+      "content": "Segunda TODO",
+      "done": false
+    }
+  ],
+  "dogs": []
+}
