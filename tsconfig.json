@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2016", 
+    "target": "es2016",
     "module": "commonjs",
-    "esModuleInterop": true, 
-    "forceConsistentCasingInFileNames": true, 
-    "skipLibCheck": true ,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -22,13 +22,26 @@
       "@ui/*": [
         "src/ui/*"
       ],
-      
-    }
+      "@db-crud-todo":[
+        "core/crud.ts"
+      ],
+      "@server/*": [
+        "src/server/*"
+      ]
+    },
+    "strict": false,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
