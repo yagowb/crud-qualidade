@@ -5,8 +5,7 @@ interface TodoControllerGetParams {
 }
 
 async function get(params: TodoControllerGetParams) {
-    // Fazer a lógica de pegar os dados
-    console.log(params);
+    // lógica de pegar os dados
     return todoRepository.get({
         page: params.page,
         limit: 2,
@@ -14,9 +13,9 @@ async function get(params: TodoControllerGetParams) {
 }
 
 function filterTodosByContent<Todo>(
-    search: string, 
+    search: string,
     todos: Array<Todo & { content: string }>
-    ): Todo[] {
+): Todo[] {
     const homeTodos = todos.filter((todo) => {
         const searchNormalized = search.toLowerCase();
         const contentNormalized = todo.content.toLowerCase();
@@ -24,7 +23,6 @@ function filterTodosByContent<Todo>(
     });
     return homeTodos;
 }
-
 
 export const todoController = {
     get,

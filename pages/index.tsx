@@ -20,11 +20,10 @@ function HomePage() {
         search,
         todos
     );
-    
+
     const hasMorePages = totalPages > page;
     const hasNoTodos = homeTodos.length === 0 && !isLoading;
 
-    
     // Load infos onload
     // - React.useEffect(() => {}, [])
     // -- Roda só no load da página
